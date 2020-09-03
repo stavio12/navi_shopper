@@ -1,0 +1,82 @@
+.navbar-brand img {
+  width: 5em;
+}
+
+.pj {
+  background: rgb(99, 79, 68);
+  background: linear-gradient(27deg, rgba(99, 79, 68, 1) 27%, rgba(120, 96, 83, 1) 84%);
+  /* height: 40%; */
+}
+
+.img img {
+  margin-left: 120px;
+}
+
+#red img {
+  width: 27em;
+}
+
+.shoes,
+.sub-panty {
+  background: rgb(225, 225, 225);
+  background: linear-gradient(170deg, rgba(225, 225, 225, 1) 0%, rgba(234, 236, 235, 1) 36%, rgba(251, 251, 252, 1) 100%);
+}
+
+.acces div img {
+  width: 20em;
+}
+
+.sub-panty img {
+  width: 15em;
+}
+
+/* Men Category */
+#logos img {
+  width: 10em;
+}
+
+.header,
+#items {
+  background: rgb(225, 225, 225);
+  background: linear-gradient(170deg, rgba(225, 225, 225, 1) 0%, rgba(234, 236, 235, 1) 36%, rgba(251, 251, 252, 1) 100%);
+}
+
+.card {
+  max-width: 18erm;
+}
+
+#features li {
+  text-decoration: none;
+  display: block;
+}
+
+.colors ul li,
+.sizes ul li {
+  text-decoration: none;
+  display: inline;
+  margin-left: 10px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.red {
+  background: red;
+  width: 10px;
+  padding: 5px;
+}
+
+.white {
+  background: whitesmoke;
+  width: 10px;
+  padding: 5px;
+}
+
+.blue {
+  background: blue;
+  width: 10px;
+  padding: 5px;
+}
+
+.footer ul li {
+  display: inline;
+}
