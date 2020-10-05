@@ -1,3 +1,47 @@
+/* Nav Menu  */
+
+#navmenCon {
+  display: none;
+}
+
+#navmen:hover + #navmenCon {
+  display: block;
+  position: absolute;
+  width: 84.8em;
+  height: 30em;
+  z-index: 1;
+  margin-top: 1.9em;
+  margin-left: -23em;
+}
+
+#navwomanCon {
+  display: none;
+}
+
+#navwoman:hover + #navwomanCon {
+  display: block;
+  position: absolute;
+  width: 84.7em;
+  height: 30em;
+  z-index: 1;
+  margin-top: 1.9em;
+  margin-left: -26em;
+}
+
+/* .navmen .list {
+  margin-top: -15em;
+} */
+
+.navImage {
+  width: 20em;
+}
+
+.navImageCon {
+  background: #e4e4e4;
+  height: 29.95em;
+  margin-top: -0.5em;
+}
+
 .navbar-brand img {
   width: 5em;
 }
@@ -7,6 +51,10 @@
   background: linear-gradient(27deg, rgba(99, 79, 68, 1) 27%, rgba(120, 96, 83, 1) 84%);
   /* height: 40%; */
 }
+
+/* .dropdown-toggle {
+  background: none !important;
+} */
 
 .img img {
   margin-left: 120px;
@@ -41,6 +89,7 @@
   background: linear-gradient(170deg, rgba(225, 225, 225, 1) 0%, rgba(234, 236, 235, 1) 36%, rgba(251, 251, 252, 1) 100%);
 }
 
+/* Items  */
 .card {
   max-width: 18erm;
 }
@@ -57,25 +106,51 @@
   margin-left: 10px;
   border: 2px solid transparent;
   border-radius: 50%;
+  padding: 7px;
+}
+
+/* .d-none {
+  display: none;
+} */
+
+.sizes ul li {
+  border: 1px solid whitesmoke;
+}
+
+.red,
+.white,
+.blue {
+  width: 10px;
+  padding: 5px;
+  padding: 7px;
+}
+
+.card {
+  background: transparent !important;
+  border: transparent !important;
+}
+
+.hr {
+  background: black;
 }
 
 .red {
   background: red;
-  width: 10px;
-  padding: 5px;
 }
 
 .white {
   background: whitesmoke;
-  width: 10px;
-  padding: 5px;
 }
 
 .blue {
   background: blue;
-  width: 10px;
-  padding: 5px;
 }
+
+.fa-minus {
+  cursor: pointer;
+}
+
+/* Footer */
 
 .footer ul li {
   display: inline;

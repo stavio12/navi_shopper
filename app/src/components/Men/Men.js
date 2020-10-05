@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import MenItems from "./MenItems";
 
 //Logos
@@ -9,6 +9,12 @@ import vans from "../../Images/vans.png";
 import fila from "../../Images/fila.png";
 
 function Men() {
+  const [display, setDisplay] = useState(false);
+
+  const collapse = (e) => {
+    setDisplay(!display);
+  };
+
   return (
     <>
       <div className="header">
@@ -43,69 +49,101 @@ function Men() {
       <div className="container menitems">
         <div className="row">
           <div className="d-none d-md-block col-md-3 col-lg-3">
-            <h3 className="pt-2">Filter</h3>
             <div>
               <ul id="features">
+                <h3 className="pt-2">Filter</h3>
+                <hr />
+
                 <li>Featured</li>
                 <li>Shoes</li>
                 <li>Apparels</li>
                 <li>New Arrivals</li>
               </ul>
             </div>
-            <hr />
+            <hr className="hr" />
             <div className="colors">
-              <h6>Color</h6>
               <ul>
-                <li className="red"></li>
-                <li className="white"></li>
-                <li className="blue"></li>
+                <div className="pt-2 pb-2">
+                  <h6 class="float-left">Color</h6>
+                  <h6 onClick={collapse}>
+                    <i class="fa fa-minus float-right" aria-hidden="true"></i>
+                  </h6>
+                </div>
+
+                <hr />
+                <div id="colors" className={display ? "d-none" : "d-block"}>
+                  <li className="red"></li>
+                  <li className="white"></li>
+                  <li className="blue"></li>
+                </div>
               </ul>
             </div>
-            <hr />
+            <hr className="hr" />
 
             <div className="sizes">
-              <h6>Sizes</h6>
               <ul>
-                <li>7</li>
-                <li>7.5</li>
-                <li>8</li>
-                <li>8.5</li>
-                <li>9</li>
-                <li>9.5</li>
-                <li>10</li>
-                <li>10.5</li>
+                <div className="pt-2 pb-2">
+                  <h6 class="float-left">Sizes</h6>
+                  <h6 onClick={collapse}>
+                    <i class="fa fa-minus float-right" aria-hidden="true"></i>
+                  </h6>
+                </div>
+                <hr />
+                <div className={display ? "d-none" : "d-block"}>
+                  <li>7</li>
+                  <li>7.5</li>
+                  <li>8</li>
+                  <li className="mx-4">8.5</li>
+                </div>
               </ul>
+              <div className={display ? "d-none" : "d-block"}>
+                <ul className="pt-2">
+                  <li>9</li>
+                  <li>9.5</li>
+                  <li>10</li>
+                  <li>10.5</li>
+                </ul>{" "}
+              </div>
             </div>
-            <hr />
+            <hr className="hr" />
             <div className="prices">
-              <h6>Price</h6>
               <ul>
-                <div className="form-check">
-                  <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                  <label className="form-check-label" htmlFor="defaultCheck1">
-                    $10 - $30{" "}
-                  </label>
+                <div className="pt-2 pb-2">
+                  <h6 class="float-left">Price</h6>
+                  <h6 onClick={collapse}>
+                    <i class="fa fa-minus float-right" aria-hidden="true"></i>
+                  </h6>
                 </div>
-                <div className="form-check">
-                  <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                  <label className="form-check-label" htmlFor="defaultCheck1">
-                    $31 - $50{" "}
-                  </label>
-                </div>
-                <div className="form-check">
-                  <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                  <label className="form-check-label" htmlFor="defaultCheck1">
-                    $51 - $100{" "}
-                  </label>
-                </div>
-                <div className="form-check">
-                  <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                  <label className="form-check-label" htmlFor="defaultCheck1">
-                    $101+{" "}
-                  </label>
+                <hr />
+                <div className={display ? "d-none" : "d-block"}>
+                  <div className="form-check">
+                    <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                    <label className="form-check-label" htmlFor="defaultCheck1">
+                      $10 - $30{" "}
+                    </label>
+                  </div>
+                  <div className="form-check">
+                    <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                    <label className="form-check-label" htmlFor="defaultCheck1">
+                      $31 - $50{" "}
+                    </label>
+                  </div>
+                  <div className="form-check">
+                    <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                    <label className="form-check-label" htmlFor="defaultCheck1">
+                      $51 - $100{" "}
+                    </label>
+                  </div>
+                  <div className="form-check">
+                    <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                    <label className="form-check-label" htmlFor="defaultCheck1">
+                      $101+{" "}
+                    </label>
+                  </div>
                 </div>
               </ul>
             </div>
+            <hr className="hr" />
           </div>
 
           <div className="d-md-none">
@@ -192,18 +230,18 @@ function Men() {
           <div className="col col-md-9 col-lg-9">
             <h6 className="text-right">
               <div className="dropdown">
-                <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown button
+                <button className="btn dropdown-toggle border-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sort By
                 </button>
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <a className="dropdown-item" href="#">
-                    Action
+                    Sort By Newest
                   </a>
                   <a className="dropdown-item" href="#">
-                    Another action
+                    Sort By Low to High{" "}
                   </a>
                   <a className="dropdown-item" href="#">
-                    Something else here
+                    Sort By High to Low{" "}
                   </a>
                 </div>
               </div>

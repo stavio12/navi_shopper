@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Nav from "./Nav";
+import Nav from "./Navs/Nav";
 import Footer from "./Footer";
 import Homepage from "./New/Homepage";
 import Men from "./Men/Men";
