@@ -7,7 +7,17 @@
 #navmen:hover + #navmenCon {
   display: block;
   position: absolute;
-  width: 84.8em;
+  width: 81.3em;
+  height: 30em;
+  z-index: 1;
+  margin-top: 1.9em;
+  margin-left: -23em;
+}
+
+#navmen:focus + #navmenCon {
+  display: block;
+  position: absolute;
+  width: 81.3em;
   height: 30em;
   z-index: 1;
   margin-top: 1.9em;
@@ -21,7 +31,17 @@
 #navwoman:hover + #navwomanCon {
   display: block;
   position: absolute;
-  width: 84.7em;
+  width: 81.1em;
+  height: 30em;
+  z-index: 1;
+  margin-top: 1.9em;
+  margin-left: -26em;
+}
+
+#navwoman:focus + #navwomanCon {
+  display: block;
+  position: absolute;
+  width: 81.1em;
   height: 30em;
   z-index: 1;
   margin-top: 1.9em;
@@ -34,6 +54,10 @@
 
 .navImage {
   width: 20em;
+}
+
+.img img {
+  height: 35em;
 }
 
 .navImageCon {
@@ -49,7 +73,7 @@
 .pj {
   background: rgb(99, 79, 68);
   background: linear-gradient(27deg, rgba(99, 79, 68, 1) 27%, rgba(120, 96, 83, 1) 84%);
-  /* height: 40%; */
+  height: 33.5em;
 }
 
 /* .dropdown-toggle {
@@ -57,11 +81,22 @@
 } */
 
 .img img {
-  margin-left: 120px;
+  position: absolute;
+  margin-left: 46px;
 }
 
 #red img {
   width: 27em;
+}
+
+#nike img {
+  position: absolute;
+  width: 30em;
+  z-index: -1;
+}
+
+.wine img {
+  width: 18.48em;
 }
 
 .shoes,
@@ -109,9 +144,23 @@
   padding: 7px;
 }
 
-/* .d-none {
-  display: none;
-} */
+.colors span {
+  text-decoration: none;
+}
+
+.colors span:hover {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+.viewimage {
+  width: 5em;
+  cursor: pointer;
+}
+
+#viewContainer ul li {
+  list-style-type: none;
+}
 
 .sizes ul li {
   border: 1px solid whitesmoke;
@@ -148,6 +197,48 @@
 
 .fa-minus {
   cursor: pointer;
+}
+
+/* Acccount */
+
+.jumbotron {
+  background: white !important;
+}
+/* .loginForm {
+  padding-top: 15em;
+} */
+
+/* Cart Session */
+
+#cart {
+  display: none;
+}
+
+#shopping-bag:hover + #cart {
+  display: block;
+  position: absolute;
+  float: right;
+  top: 6.3em;
+  right: 0.5em;
+  z-index: 1;
+}
+
+#cart ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+/* Item View */
+
+#colors ul li {
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.size ul li {
+  display: inline-block;
+  margin: 0.5em;
 }
 
 /* Footer */

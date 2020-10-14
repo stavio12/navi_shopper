@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import white from "../../Images/1.jpg";
+import { Link } from "react-router-dom";
 
 function MenItems() {
   return (
@@ -18,7 +19,11 @@ function MenItems() {
                       <li className="white"></li>
                       <li className="blue"></li>
                     </ul>
-                    <span className="pt-3 h5">Men's Shoe yen yen</span>
+                    <Link to="/viewItem">
+                      <span className="pt-3 h5">Men's Shoe yen yen</span>
+                    </Link>{" "}
+                  </div>
+                  <div className=" card-text text-left">
                     <small>$10.00</small>
                   </div>
                 </div>
@@ -35,9 +40,13 @@ function MenItems() {
                       <li className="white"></li>
                       <li className="blue"></li>
                     </ul>
-                    <span className="pt-3 h5">Men's Shoe yen yen</span>
-                    <small>$10.00</small>
+                    <Link to="/viewItem">
+                      <span className="pt-3 h5">Men's Shoe yen yen</span>
+                    </Link>{" "}
                   </div>
+                  <div className=" card-text text-left">
+                    <small>$10.00</small>
+                  </div>{" "}
                 </div>
               </div>
             </div>
@@ -52,9 +61,13 @@ function MenItems() {
                       <li className="white"></li>
                       <li className="blue"></li>
                     </ul>
-                    <span className="pt-3 h5">Men's Shoe yen yen</span>
-                    <small>$10.00</small>
+                    <Link to="/viewItem">
+                      <span className="pt-3 h5">Fila SunBlazers</span>
+                    </Link>{" "}
                   </div>
+                  <div className=" card-text text-left">
+                    <small>$10.00</small>
+                  </div>{" "}
                 </div>
               </div>
             </div>
@@ -69,9 +82,13 @@ function MenItems() {
                       <li className="white"></li>
                       <li className="blue"></li>
                     </ul>
-                    <span className="pt-3 h5">Men's Shoe yen yen</span>
-                    <small>$10.00</small>
+                    <Link to="/viewItem">
+                      <span className="pt-3 h5">Fila SunBlazers</span>
+                    </Link>{" "}
                   </div>
+                  <div className=" card-text text-left">
+                    <small>$10.00</small>
+                  </div>{" "}
                 </div>
               </div>
             </div>
@@ -86,9 +103,13 @@ function MenItems() {
                       <li className="white"></li>
                       <li className="blue"></li>
                     </ul>
-                    <span className="pt-3 h5">Men's Shoe yen yen</span>
-                    <small>$10.00</small>
+                    <Link to="/viewItem">
+                      <span className="pt-3 h5">Addidas Moon Light</span>
+                    </Link>{" "}
                   </div>
+                  <div className=" card-text text-left">
+                    <small>$10.00</small>
+                  </div>{" "}
                 </div>
               </div>
             </div>
@@ -103,9 +124,13 @@ function MenItems() {
                       <li className="white"></li>
                       <li className="blue"></li>
                     </ul>
-                    <span className="pt-3 h5">Men's Shoe yen yen</span>
-                    <small>$10.00</small>
+                    <Link to="/viewItem">
+                      <span className="pt-3 h5">Addidas Moon Light</span>
+                    </Link>{" "}
                   </div>
+                  <div className=" card-text text-left">
+                    <small>$10.00</small>
+                  </div>{" "}
                 </div>
               </div>
             </div>
@@ -120,9 +145,13 @@ function MenItems() {
                       <li className="white"></li>
                       <li className="blue"></li>
                     </ul>
-                    <span className="pt-3 h5">Men's Shoe yen yen</span>
-                    <small>$10.00</small>
+                    <Link to="/viewItem">
+                      <span className="pt-3 h5">Addidas Moon Light</span>
+                    </Link>{" "}
                   </div>
+                  <div className=" card-text text-left">
+                    <small>$10.00</small>
+                  </div>{" "}
                 </div>
               </div>
             </div>

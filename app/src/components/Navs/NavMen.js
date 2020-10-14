@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import red from "../../Images/1.jpg";
+import { Link } from "react-router-dom";
 
 function NavMen() {
   return (
@@ -38,9 +39,11 @@ function NavMen() {
           <div className="mx-auto">
             <ul class="navbar-nav  mx-5 flex-column">
               <li class="nav-item active">
-                <a class="nav-link" href="#">
-                  SHOES{" "}
-                </a>
+                <Link to="/">
+                  <a class="nav-link" href="#">
+                    SHOES{" "}
+                  </a>
+                </Link>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
@@ -58,19 +61,13 @@ function NavMen() {
           <div className="mx-auto">
             <ul class="navbar-nav  mx-5 flex-column">
               <li class="nav-item active">
-                <a class="nav-link" href="#">
-                  ASSOCERIES{" "}
-                </a>
+                <a class="nav-link">ASSOCERIES </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  ALL NEW ARRIVALS
-                </a>
+                <a class="nav-link">ALL NEW ARRIVALS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  ALL NEW ARRIVALS
-                </a>
+                <a class="nav-link">ALL NEW ARRIVALS</a>
               </li>
             </ul>
           </div>

@@ -61,19 +61,41 @@ function Nav() {
           </form>
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <Link to="/" className="nav-link" href="#">
+              <Link to="/login" className="nav-link" href="#">
                 MY ACCOUNT
               </Link>
             </li>
-            <li className="nav-item">
+            <li id="shopping-bag" className="nav-item ">
               <Link to="/" className="nav-link" href="#">
-                <i className="fa fa-shopping-bag " aria-hidden="true">
+                <i id="shopping-bag" className="fa fa-shopping-bag " aria-hidden="true">
                   (0)
                 </i>
               </Link>
             </li>
           </ul>
         </div>
+        {/* <div id="cart" className=" bg-dark float-left">
+          <ul>
+            <li>
+              <ul>
+                <li>Image</li>
+                <li>Item</li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>Image</li>
+                <li>Item</li>
+              </ul>
+            </li>
+            <hr />
+            <div id="total">
+              <form>
+                <button type="submit">Checkout</button>
+              </form>
+            </div>
+          </ul>
+        </div> */}
       </nav>
     </>
   );

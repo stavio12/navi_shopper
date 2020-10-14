@@ -6,6 +6,10 @@ import Homepage from "./New/Homepage";
 import Men from "./Men/Men";
 import Women from "./women/Women";
 import Wholesale from "./Wholesale/Wholesale";
+import MenViewed from "./Men/MenViewed";
+import Login from "./Account/Login";
+import Register from "./Account/Register";
+
 function App() {
   return (
     <>
@@ -17,6 +21,10 @@ function App() {
         <Route path="/men" exact component={Men} />
         <Route path="/women" exact component={Women} />
         {/* <Route path="/wholesale" exact component={Wholesale} /> */}
+        <Route path="/viewItem" exact component={MenViewed} />
+        <Route path="/login" exact component={Login} />
+        <Route path="/register" exact component={Register} />
+
         <Footer />
       </Router>
     </>
